@@ -1,0 +1,166 @@
+/* Fondo con degradado */
+body {
+    background: linear-gradient(to bottom, #f8c8dc, #ffb6c1);
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+    background-color: rgba(255, 182, 193, 0.9);
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+    color: #880e4f;
+    font-size: 28px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #880e4f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #aa125f;
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #880e4f;
+    font-size: 24px;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 5px 40px;
+    margin-top: -50px; /* Restaurando posición original */
+}
+
+.bienvenida-texto {
+    text-align: center;
+    flex: 1;
+    max-width: 400px;
+    margin-top: -120px; /* Restaurando posición original */
+}
+
+.bienvenida h2 {
+    margin-bottom: 5px;
+}
+
+.bienvenida p {
+    margin-top: 0;
+}
+
+/* Galería */
+#galeria {
+    padding-top: 0;
+    margin-top: -120px; /* Restaurando posición original */
+}
+
+#galeria h2 {
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+
+/* Ajuste de imágenes laterales */
+.imagen-lateral {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-top: 60px; /* Bajando la imagen del local 6 cm */
+}
+
+.imagen-lateral:hover {
+    transform: scale(1.1);
+}
+
+/* Ajuste de imágenes en la galería */
+.imagenes-costados {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.imagenes-costados img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-costados img:hover {
+    transform: scale(1.1);
+}
+
+/* Servicios y precios */
+#servicios {
+    background-color: #d8a1d6; /* Color lila */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#servicios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#servicios ul li {
+    font-size: 18px;
+    padding: 8px 0;
+    color: #880e4f;
+}
+
+/* Botón ver más */
+.boton-ver-mas {
+    display: inline-block;
+    background-color: #880e4f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ver-mas:hover {
+    background-color: #aa125f;
+}
